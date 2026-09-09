@@ -20,7 +20,7 @@
 // 2. Écris ta solution sous cette ligne.
 // TODO: écris ta solution ici.
 
-let panier = 5000;
+let panier = 350;
 
 if (panier > 500) {
   panier = panier - (panier * 10) / 100;

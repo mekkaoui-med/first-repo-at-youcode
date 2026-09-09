@@ -7,6 +7,13 @@
  *
  * Aide : consulte ../02-guides.md seulement si tu bloques.
  */
-'use strict';
+"use strict";
 
 // TODO: écris ta solution ici.
+let data = "123";
+
+console.log(typeof data);
+
+data = Number(data);
+
+console.log(typeof data);
