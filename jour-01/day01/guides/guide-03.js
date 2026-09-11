@@ -12,7 +12,6 @@
 // TODO: écris ta solution ici.
 
 let age = 26;
-
 if (age >= 18) {
     console.log("Entrée autorisée");
 } else {
