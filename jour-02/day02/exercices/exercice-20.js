@@ -5,13 +5,26 @@
  * ─────────────────────────────────────────────────────────────
  *
  * 🎯 MISSION
- * Un nombre d'Armstrong à 3 chiffres est égal à la somme des cubes de ses chiffres (ex: 153 = 1³ + 5³ + 3³). Utilisez une boucle allant de 100 à 999 pour trouver et afficher TOUS les nombres d'Armstrong.
+ * Un nombre d'Armstrong à 3 chiffres est égal à la somme des cubes de ses chiffres (ex: 153 = 1³ + 5³ + 3³).
+ *  Utilisez une boucle allant de 100 à 999 pour trouver et afficher TOUS les nombres d'Armstrong.
  *
  * 📖 Consigne détaillée : ../03-exercices.md#exercice-20
  * ▶️ Commande : node day02/exercices/exercice-20.js
  */
-'use strict';
+"use strict";
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
 // TODO: écris ta solution ici.
+for (let n = 100; n <= 999; n++) {
+  let c = n % 10;
+//   console.log(c)
+  let reste = (n - c) / 10;
+//   console.log(reste)
+  let b = reste % 10;
+  let a = (reste - b) / 10;
+  let sum = a ** 3 + b ** 3 + c ** 3;
+  if (sum == n) {
+    console.log(n);
+  }
+}

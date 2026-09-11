@@ -13,8 +13,25 @@
  * 📖 Consigne détaillée : ../03-exercices.md#exercice-18
  * ▶️ Commande : node day02/exercices/exercice-18.js
  */
-'use strict';
+"use strict";
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
 // TODO: écris ta solution ici.
+let N = 15;
+let result = 0;
+let counter = 0;
+
+while (N != 1){
+     if (N % 2 == 0) {
+    N = N / 2;
+    counter++;
+  }
+  else{
+    N = N + 1;
+    counter++;
+  }
+}
+ 
+
+console.log(counter)

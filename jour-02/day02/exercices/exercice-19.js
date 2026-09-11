@@ -11,8 +11,29 @@
  * 📖 Consigne détaillée : ../03-exercices.md#exercice-19
  * ▶️ Commande : node day02/exercices/exercice-19.js
  */
-'use strict';
+"use strict";
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
 // TODO: écris ta solution ici.
+
+function grille() {
+    let position = "";
+
+    for (let i = 0; i < 8; i++) {
+        for (let j = 0; j < 8; j++) {
+
+            if ((i + j) % 2 == 0) {
+                position += " ";
+            } else {
+                position += "#";
+            }
+        }
+
+        position += "\n";
+    }
+
+    return position;
+}
+
+console.log(grille());
