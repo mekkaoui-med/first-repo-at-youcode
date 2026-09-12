@@ -16,3 +16,17 @@
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
 // TODO: écris ta solution ici.
+let mots = ["pomme", "banane", "pomme", "orange", "banane", "pomme"];
+
+function countMots(mots){
+    let counts= {};
+    for(let i = 0; i < mots.length;i++){
+        if(counts[mots[i]] !== undefined){
+            counts[mots[i]] += 1;
+        }else{
+            counts[mots[i]] = 1;
+        }
+    }
+    return counts;
+}
+console.log(countMots(mots))
