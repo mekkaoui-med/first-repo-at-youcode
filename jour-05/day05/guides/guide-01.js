@@ -10,3 +10,12 @@
 'use strict';
 
 // TODO: écris ta solution ici.
+let fruits = ["Pomme", "Banane", "Orange"];
+let target = "Banane";
+let change = "Mangue"
+for (let i = 0 ; i < fruits.length;i++){
+    if(fruits[i] === target){
+        fruits[i] = change
+    }
+}
+console.log(fruits)
