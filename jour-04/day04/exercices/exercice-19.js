@@ -18,4 +18,12 @@
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
 // TODO: écris ta solution ici.
-.
+let plaque = "1234-A-56";
+
+let regex = /^\d+-[A-Za-z]+-\d+$/;
+
+if (regex.test(plaque)) {
+    console.log("Plaque valide");
+} else {
+    console.log("Plaque invalide");
+}

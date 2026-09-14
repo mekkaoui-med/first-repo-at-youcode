@@ -17,3 +17,18 @@
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
 // TODO: écris ta solution ici.
+let title = "Les 10 secrets de JavaScript!";
+let lowerTitle = title.toLocaleLowerCase()
+// let titleSplit = lowerTitle.split("");
+let slug = ""
+for(let i =0 ; i< lowerTitle.length;i++){
+        if(lowerTitle[i] ===" " ){
+            slug +="-"
+        }else if (lowerTitle[i] === "!" || lowerTitle[i] === "?" || 
+            lowerTitle[i] === "(" || lowerTitle[i] === ")"){
+                continue;
+        }else{
+            slug+= lowerTitle[i]
+        }
+}
+console.log(slug)
