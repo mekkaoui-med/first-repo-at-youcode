@@ -10,8 +10,14 @@
  * 📖 Consigne détaillée : ../03-exercices.md#exercice-12
  * ▶️ Commande : node day04/exercices/exercice-12.js
  */
-'use strict';
+"use strict";
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
 // TODO: écris ta solution ici.
+let phrase = "Bonjour le monde";
+let splitphrase = phrase.split(" ");
+let joinphras = splitphrase.reverse();
+let phraseTrsnforme = joinphras.join(" ");
+console.log(phraseTrsnforme);
+// console.log(typeof(phraseTrsnforme))

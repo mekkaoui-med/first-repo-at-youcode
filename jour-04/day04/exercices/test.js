@@ -1,9 +1,3 @@
-let mot = "mmm mmm mmm"
-let target = " ";
-  let index =0;
-for(let i = 0 ;i<mot.length;i++){
-    if(mot[i] == target){
-      index = mot.indexOf(mot[i]);
-    }
-}
-console.log(index)
+let mot = "A"
+let xx = mot[0].charCodeAt(0) + 1
+console.log(xx)

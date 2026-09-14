@@ -5,7 +5,8 @@
  * ─────────────────────────────────────────────────────────────
  *
  * 🎯 MISSION
- * Comptez le nombre de mots dans une longue chaîne. *Attention aux espaces multiples !* (Un mot est généralement séparé par un espace).
+ * Comptez le nombre de mots dans une longue chaîne. 
+ * *Attention aux espaces multiples !* (Un mot est généralement séparé par un espace).
  *
  * 📖 Consigne détaillée : ../03-exercices.md#exercice-14
  * ▶️ Commande : node day04/exercices/exercice-14.js
@@ -15,3 +16,14 @@
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
 // TODO: écris ta solution ici.
+let phrase = "Bonjour     YouCode     Nador !";
+let splitphrase = phrase.split(" ")
+let motcounter = 0;
+console.log(splitphrase[0])
+for(let i = 0 ; i < splitphrase.length;i++){
+    if(splitphrase[i] !== ""){
+        motcounter++;
+    }
+}
+console.log(splitphrase)
+console.log(motcounter)

@@ -11,8 +11,16 @@
  * 📖 Consigne détaillée : ../03-exercices.md#exercice-11
  * ▶️ Commande : node day04/exercices/exercice-11.js
  */
-'use strict';
+"use strict";
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
 // TODO: écris ta solution ici.
+let phrase = "Hyper Text Markup Language";
+let splitphrase = phrase.split(" ");
+let result = "";
+console.log(splitphrase);
+for (let i = 0; i < splitphrase.length; i++) {
+  result = result + splitphrase[i][0];
+}
+console.log(result);

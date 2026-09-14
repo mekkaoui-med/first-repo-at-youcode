@@ -15,3 +15,13 @@
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
 // TODO: écris ta solution ici.
+let paragraphe = "hEllo mohamed mekkaoui ";
+let conter = 0 ;
+let paragrapheToLower = paragraphe.toLocaleLowerCase()
+console.log(paragrapheToLower)
+for(let i=0;i<paragrapheToLower.length;i++){
+    if(paragrapheToLower[i] == "e"){
+        conter++
+    }
+}
+console.log(conter)

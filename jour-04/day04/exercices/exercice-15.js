@@ -16,3 +16,14 @@
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
 // TODO: écris ta solution ici.
+let mot1 = "chien";
+let mot2 = "niche";
+let mot1Split = mot1.split("").sort().join("")
+let mot2Split = mot2.split("").sort().join("")
+console.log(mot1Split);
+console.log(mot2Split);
+if(mot1Split === mot2Split){
+    console.log(true)
+}else{
+    console.log(false)
+}
